@@ -1,0 +1,91 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 15/11/2019 09:25
+  	*/
+
+@font-face {
+  font-family: "Flaticon-Common";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon-Common";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-common-"]:before, [class*=" flaticon-common-"]:before,
+[class^="flaticon-common-"]:after, [class*=" flaticon-common-"]:after {
+  font-family: "Flaticon-Common";
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-common-next:before { content: "\f100"; }
+.flaticon-common-back:before { content: "\f101"; }
+.flaticon-common-download:before { content: "\f102"; }
+.flaticon-common-upload:before { content: "\f103"; }
+.flaticon-common-check:before { content: "\f104"; }
+.flaticon-common-more:before { content: "\f105"; }
+.flaticon-common-menu:before { content: "\f106"; }
+.flaticon-common-checked:before { content: "\f107"; }
+.flaticon-common-cancel:before { content: "\f108"; }
+.flaticon-common-menu-1:before { content: "\f109"; }
+.flaticon-common-menu-2:before { content: "\f10a"; }
+.flaticon-common-share:before { content: "\f10b"; }
+.flaticon-common-search:before { content: "\f10c"; }
+.flaticon-common-link:before { content: "\f10d"; }
+.flaticon-common-gear:before { content: "\f10e"; }
+.flaticon-common-bin:before { content: "\f10f"; }
+.flaticon-common-portfolio:before { content: "\f110"; }
+.flaticon-common-home:before { content: "\f111"; }
+.flaticon-common-play-button:before { content: "\f112"; }
+.flaticon-common-close:before { content: "\f113"; }
+.flaticon-common-close-1:before { content: "\f114"; }
+.flaticon-common-tick:before { content: "\f115"; }
+.flaticon-common-checked-1:before { content: "\f116"; }
+.flaticon-common-menu-3:before { content: "\f117"; }
+.flaticon-common-cancel-1:before { content: "\f118"; }
+.flaticon-common-left-arrow:before { content: "\f119"; }
+.flaticon-common-tag:before { content: "\f11a"; }
+.flaticon-common-plus:before { content: "\f11b"; }
+.flaticon-common-add-button-inside-black-circle:before { content: "\f11c"; }
+.flaticon-common-edit:before { content: "\f11d"; }
+.flaticon-common-edit-1:before { content: "\f11e"; }
+.flaticon-common-minus:before { content: "\f11f"; }
+.flaticon-common-less:before { content: "\f120"; }
+.flaticon-common-minus-symbol:before { content: "\f121"; }
+.flaticon-common-plus-1:before { content: "\f122"; }
+.flaticon-common-basket:before { content: "\f123"; }
+.flaticon-common-phone:before { content: "\f124"; }
+.flaticon-common-mail:before { content: "\f125"; }
+.flaticon-common-pin:before { content: "\f126"; }
+.flaticon-common-github:before { content: "\f127"; }
+.flaticon-common-right-arrow:before { content: "\f128"; }
+.flaticon-common-download-arrow:before { content: "\f129"; }
+.flaticon-common-up-arrow:before { content: "\f12a"; }
+.flaticon-common-circular-arrow:before { content: "\f12b"; }
+.flaticon-common-download-from-cloud:before { content: "\f12c"; }
+.flaticon-common-tick-1:before { content: "\f12d"; }
+.flaticon-common-user:before { content: "\f12e"; }
+.flaticon-common-user-1:before { content: "\f12f"; }
+.flaticon-common-close-2:before { content: "\f130"; }
+.flaticon-common-warning:before { content: "\f131"; }
+.flaticon-common-tick-2:before { content: "\f132"; }
+.flaticon-common-gps:before { content: "\f133"; }
+.flaticon-common-scroll:before { content: "\f134"; }
+.flaticon-common-scroll-1:before { content: "\f135"; }
+.flaticon-common-magnifying-glass:before { content: "\f136"; }
+.flaticon-common-information:before { content: "\f137"; }
+.flaticon-common-info-1:before { content: "\f138"; }
+.flaticon-common-info:before { content: "\f139"; }
+.flaticon-common-question:before { content: "\f13a"; }
