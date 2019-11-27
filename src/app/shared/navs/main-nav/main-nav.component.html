@@ -1,1 +1,25 @@
-<p>main-nav works!</p>
+<nav class="main-nav" ng-hide="hide_top_nav=='true'" [ngClass]="{'bg-white': options.background=='white'}">
+  <div class="tmn-items-hld">
+    <div class="logo-hld">
+      <img src="http://13.235.70.199/images/logos/LOGO.png" alt="">
+      <a href="/" class="absolute-link"></a>
+    </div>
+    <div class="tmn-items-con" ng-class="{'small': smallNav}">
+      <div class="tmn-item {{o.classes}}" *ngFor="let o of items" ng-class="{'to-right': o.to_right, 'active': o.active, 'if-authenticated': o.if_authenticated}">
+        <div class="item">{{o.name}}</div>
+        <div class="tmn-sub-item" ng-if="o.has_sub_nav">
+          <!-- <sub-nav-one items="items"></sub-nav-one> -->
+          <!-- <descriptive-sub-nav-two items="o.items"></descriptive-sub-nav-two> -->
+        </div>
+        <a href="{{o.link}}"  target="{{(o.external) ? '_blank' : undefined}}" class="absolute-link"></a>
+      </div>
+      <div class="to-right if-authenticated">
+        <!-- <header-profile-box></header-profile-box> -->
+      </div>
+    </div>
+    <div class="tmn-item small-nav-shortcut to-right" ng-click="smallNav=!smallNav">
+      <span class="flaticon-common-menu-3"></span>
+    </div>
+  </div>
+  <!-- <main-nav-small></main-nav-small> -->
+</nav>
