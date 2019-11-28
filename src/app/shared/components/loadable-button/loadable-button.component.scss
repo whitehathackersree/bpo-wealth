@@ -1,0 +1,51 @@
+.loadable-button{
+  position: relative;
+  padding: 1rem 1.6rem;
+  border: 1px solid #ddd;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.loadable-button:active{
+  opacity: .5;
+}
+.loadable-button >input{
+  color: inherit;
+  font-weight: inherit;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.loadable-button >input:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.loadable-button >.loader-hld{
+  position: absolute;
+  display: none;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.loadable-button >.loader-hld >img{
+  width: auto;
+  height: 60%;
+  display: block;
+}
+
+.loadable-button.submitting >input{
+  visibility: hidden;
+}
+.loadable-button.submitting >.loader-hld{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}

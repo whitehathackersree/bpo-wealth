@@ -4,8 +4,8 @@
       <img src="http://13.235.70.199/images/logos/LOGO.png" alt="">
       <a href="/" class="absolute-link"></a>
     </div>
-    <div class="tmn-items-con" ng-class="{'small': smallNav}">
-      <div class="tmn-item {{o.classes}}" *ngFor="let o of items" ng-class="{'to-right': o.to_right, 'active': o.active, 'if-authenticated': o.if_authenticated}">
+    <div class="tmn-items-con" [ngClass]="{'small': smallNav}">
+      <div class="tmn-item {{o.classes}}" *ngFor="let o of items" [ngClass]="{'to-right': o.to_right, 'active': o.active, 'if-authenticated': o.if_authenticated}">
         <div class="item">{{o.name}}</div>
         <div class="tmn-sub-item" ng-if="o.has_sub_nav">
           <!-- <sub-nav-one items="items"></sub-nav-one> -->
@@ -17,7 +17,7 @@
         <!-- <header-profile-box></header-profile-box> -->
       </div>
     </div>
-    <div class="tmn-item small-nav-shortcut to-right" ng-click="smallNav=!smallNav">
+    <div class="tmn-item small-nav-shortcut to-right" (click)="smallNav=!smallNav">
       <span class="flaticon-common-menu-3"></span>
     </div>
   </div>

@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'wealth';
-  nav_items:Array<any> = [];
-  nav_items=[
+  nav_items:Array<any> = [
       {
         name: "Home",
         alias: "home",

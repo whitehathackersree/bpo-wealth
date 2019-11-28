@@ -1,0 +1,6 @@
+<div class="loadable-button {{'type-'+type}}" [ngClass]="{'disabled': disabled, 'submitting': submitting}">
+  <input [type]="type" [disabled]=disabled [value]="value">
+  <div class="loader-hld">
+    <img src="{{loaders[loaderColor]}}" alt="">
+  </div>
+</div>

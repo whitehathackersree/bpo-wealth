@@ -1,0 +1,27 @@
+<div class="steps-wizard">
+  <ng-content></ng-content>
+  <div class="steps-holder-wrapper">
+    <div class="steps-holder">
+      <div class="step {{'step_'+$index}}" *ngFor="let step of steps; index as $index" [ngClass]="{'active': step.selected}" (click)="selectStep(step)">
+        <div class="circle"><span>{{$index+1}}</span></div>
+        <div class="txt">{{step.name}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="content-holder">
+    <ng-content></ng-content>
+  </div>
+  <div class="back-next-hld">
+    <div class="back-hld" ng-show="previous_step">
+      <!-- <span class="button" ng-click="back()">Back</span><span>{{previous_step.name}}</span> -->
+    </div>
+    <div class="next-hld" ng-show="next_step || onSubmit">
+      <!-- <span>{{next_step.name}}</span>  -->
+      <loadable-button [value]="next_step?'Next':'Submit'" [submitting]="submitting" (click)="!submitting && next($event)"></loadable-button>
+    </div>
+  </div>
+</div>
+
+  <pre>
+    {{steps | json}}
+  </pre>
