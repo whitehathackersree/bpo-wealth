@@ -9,14 +9,13 @@ import { AppComponent } from './app.component';
 
 
 import { SharedModule } from './shared/shared.module';
-
-import { MainNavComponent } from './shared/navs/main-nav/main-nav.component';
 import { StepsWizardModule } from './shared/components/steps-wizard/steps-wizard.module';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainNavComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,

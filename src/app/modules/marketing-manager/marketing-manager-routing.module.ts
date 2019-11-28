@@ -4,11 +4,10 @@ import { StepsComponent } from './pages/steps/steps.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: "abcd",
     component: StepsComponent,
   }
 ]
-
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
