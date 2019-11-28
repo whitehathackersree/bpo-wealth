@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { MarketingManagerRoutingModule } from './marketing-manager-routing.module';
 import { SharedModule } from './../../shared/shared.module';
 import { StepsWizardModule } from "./../../shared/components/steps-wizard/steps-wizard.module";
@@ -14,11 +15,11 @@ import { MarketingManagerComponent } from './marketing-manager.component';
     StepsComponent
   ],
   imports: [
-    CommonModule,
+    RouterModule,
     MarketingManagerRoutingModule,
+    CommonModule,
     SharedModule,
     StepsWizardModule,
-  ],
-  bootstrap: [MarketingManagerComponent]
+  ]
 })
 export class MarketingManagerModule { }

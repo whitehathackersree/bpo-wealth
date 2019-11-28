@@ -18,9 +18,9 @@ import { TestComponent } from './test/test.component';
     TestComponent,
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
     CommonModule,
     HttpClientModule,
     SharedModule,

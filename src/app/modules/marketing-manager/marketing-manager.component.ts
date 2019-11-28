@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-marketing-manager',
   templateUrl: './marketing-manager.component.html',
   styleUrls: ['./marketing-manager.component.scss']
 })
-export class MarketingManagerComponent implements OnInit {
+export class MarketingManagerComponent {
 
   nav_items:Array<any> = [
       {
@@ -16,9 +16,9 @@ export class MarketingManagerComponent implements OnInit {
         if_authenticated: true,
       },
       {
-        name: "Dashboard",
-        alias: "dashboard",
-        link: "/dashboard/",
+        name: "Steps",
+        alias: "steps",
+        link: "/marketing-manager/steps/",
         if_authenticated: true,
       },
       {
@@ -47,9 +47,6 @@ export class MarketingManagerComponent implements OnInit {
 
   constructor() {
       console.log("bbbbbbbbbbbbbbbbbbbbbbbbbbbb");
-  }
-
-  ngOnInit() {
   }
 
 }

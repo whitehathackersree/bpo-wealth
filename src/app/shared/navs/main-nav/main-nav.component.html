@@ -11,7 +11,8 @@
           <!-- <sub-nav-one items="items"></sub-nav-one> -->
           <!-- <descriptive-sub-nav-two items="o.items"></descriptive-sub-nav-two> -->
         </div>
-        <a href="{{o.link}}"  target="{{(o.external) ? '_blank' : undefined}}" class="absolute-link"></a>
+        <a routerLink="{{o.link}}"  target="{{(o.external) ? '_blank' : undefined}}" class="absolute-link"></a>
+        <!-- <a routerLink="{{o.link}}"  [target]="{{(o.external) ? '_blank' : undefined}}" class="absolute-link"></a> -->
       </div>
       <div class="to-right if-authenticated">
         <!-- <header-profile-box></header-profile-box> -->

@@ -18,7 +18,7 @@ import { StepsWizardItemComponent } from './steps-wizard-item/steps-wizard-item.
 export class StepsWizardComponent implements AfterContentInit {
   @ContentChildren(StepsWizardItemComponent) steps: QueryList<StepsWizardItemComponent>;
   constructor() { }
-
+  selectedStep;
   //after content children are set
   ngAfterContentInit(){
     //get all selected steps
